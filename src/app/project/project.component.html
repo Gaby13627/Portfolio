@@ -1,1 +1,23 @@
-<p>project works!</p>
+<div class="bar">
+  <div class="left">Project</div>
+  <div class="right"></div>
+</div>
+
+<div class="main">
+
+  <div class="left">
+    <div class="check">
+      <mat-checkbox *ngFor="let tag of tags" (change)="onChange($event, tag)">{{ tag }}</mat-checkbox>
+    </div>
+  </div>
+
+  <div class="right">
+    <mat-card *ngFor="let project of projectArray" class="example-card">
+      <img mat-card-image src="{{ project.img }}" alt="Photo of a Shiba Inu">
+      <mat-card-content>
+        <h3>{{ project.project_name }}</h3>
+      </mat-card-content>
+      <button mat-button class="myButton" (click)="openDialog(project)">More</button>
+    </mat-card>
+  </div>
+</div>

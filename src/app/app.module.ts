@@ -5,19 +5,19 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import { AboutMeComponent } from './about-me/about-me.component';
-import { ProjectComponent } from './project/project.component';
+import { ProjectComponent, DialogDataExampleDialog } from './project/project.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTreeModule } from '@angular/material/tree';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
-import { MatCheckboxModule } from '@angular/Material/checkbox'
+import { MatCheckboxModule } from '@angular/material/checkbox'
 import { MatDialogModule  } from '@angular/material/dialog';
-
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
+    DialogDataExampleDialog,
     AboutMeComponent,
     ProjectComponent,
   ],
@@ -29,7 +29,7 @@ import { MatDialogModule  } from '@angular/material/dialog';
     MatIconModule,
     MatCardModule,
     MatCheckboxModule,
-    MatDialogModule
+    MatDialogModule,
 
   ],
   providers: [],
