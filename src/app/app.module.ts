@@ -9,6 +9,10 @@ import { ProjectComponent } from './project/project.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTreeModule } from '@angular/material/tree';
 import { MatIconModule } from '@angular/material/icon';
+import { MatCardModule } from '@angular/material/card';
+import { MatCheckboxModule } from '@angular/Material/checkbox'
+import { MatDialogModule  } from '@angular/material/dialog';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +26,11 @@ import { MatIconModule } from '@angular/material/icon';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatTreeModule,
-    MatIconModule
+    MatIconModule,
+    MatCardModule,
+    MatCheckboxModule,
+    MatDialogModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
