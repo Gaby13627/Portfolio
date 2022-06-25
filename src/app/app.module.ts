@@ -6,17 +6,19 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ProjectComponent } from './project/project.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AboutMeComponent,
-    ProjectComponent
+    ProjectComponent,
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
